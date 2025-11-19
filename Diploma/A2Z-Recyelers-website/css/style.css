@@ -1,0 +1,823 @@
+/* General Styles */
+/* Reset default body margin and padding, and set a global font style */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the header section with a background color and padding */
+header {
+    background-color: #0156a3;
+    color: white;
+    padding: 1rem 0;
+}
+
+/* Navigation Styling */
+/* Center the navigation menu items and ensure proper spacing */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+/* Style for navigation links container */
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Individual navigation links styling */
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Additional navigation link styling to ensure consistent color and margin */
+nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+/* Adds padding around the main content area */
+main {
+    padding: 2rem;
+}
+
+/* Banner Section */
+/* Full-width banner with flex centering */
+.banner {
+    width: 100%;
+    overflow: hidden;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style for banner images with animation for fading effect */
+.banner-img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    animation: pronouncedFadeBanner 10s ease-in-out infinite;
+}
+
+/* Keyframe animation for the banner fading effect */
+@keyframes pronouncedFadeBanner {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.6;
+    }
+}
+
+/* Mission Statement */
+/* Centered text block with background and padding */
+.mission {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+}
+
+/* Style for the mission section title */
+.mission h2 {
+    color: #0156a3;
+    margin-bottom: 0.5rem;
+}
+
+/* Recyclable Items Section */
+/* Section with centered content and a styled background */
+.recyclable-items {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    margin: 2rem 0 5rem;
+    border-radius: 8px;
+}
+
+/* Grid layout for recyclable item cards */
+.recyclable-items .items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+/* Style for individual recyclable item cards */
+.recyclable-items .item {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect for recyclable items */
+.recyclable-items .item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for images in the recyclable items */
+.recyclable-items .item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+/* Style for text inside recyclable items */
+.recyclable-items .item p {
+    margin: 0.5rem 0 0;
+    font-weight: bold;
+    color: #0156a3;
+}
+
+/* Recycling Tracker */
+/* Style for the tracker widget container */
+.tracker-widget {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+}
+
+/* Style for the progress bar background */
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 10px;
+    margin: 1rem 0;
+    overflow: hidden;
+}
+
+/* Style for the fill of the progress bar */
+.progress-fill {
+    height: 100%;
+    width: 0;
+    background-color: #0156a3;
+    border-radius: 10px;
+    transition: width 0.5s ease-in-out;
+}
+
+/* Button styling for the tracker */
+button#addRecycleButton {
+    background-color: #7b2e0f;
+    color: white;
+    padding: 0.7rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Hover effect for the tracker button */
+button#addRecycleButton:hover {
+    background-color: #5b230c;
+}
+
+/* Recycling Tips Section */
+/* Centered block with shadow for tips */
+.recycling-tips {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f4f4f4;
+    margin: 2rem 0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the tips container */
+.tips-container {
+    display: inline-block;
+    text-align: left;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* List styles for tips */
+.tips-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Individual tip items */
+.tips-container li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+/* Tip icons */
+.tips-container li img {
+    width: 40px;
+    height: 40px;
+    margin-right: 1rem;
+    border-radius: 8px;
+}
+
+
+/* Projects Section */
+/* Style for the projects section header */
+.projects-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+/* Grid layout for displaying project items */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+/* Individual project item styling */
+.project-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+
+/* Styling for images within the project item */
+.project-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+/* Styling for project item titles */
+.project-item h3 {
+    color: #0156a3;
+    margin-bottom: 0.5rem;
+}
+
+/* Description text within project items */
+.project-item p {
+    color: #555;
+    text-align: left;
+    line-height: 1.6;
+}
+
+/* Policy Sections */
+/* General container styling for policy sections */
+.policy-section {
+    padding: 2rem;
+    background-color: white;
+    margin: 1.5rem auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for titles in policy sections */
+.policy-section h3 {
+    font-size: 1.6rem;
+    color: #0156a3;
+    margin-bottom: 0.5rem;
+}
+
+/* General paragraph styling in policy sections */
+.policy-section p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Section Styling */
+/* Adds spacing between sections */
+section {
+    margin-bottom: 2rem;
+}
+
+/* Anchor Link Styling */
+/* General link color and hover styles */
+a {
+    color: #ffa200;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Events and News Section */
+/* Container styling for individual events or news items */
+.event, .news-item {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+/* Styling for titles within events or news items */
+.event h3, .news-item h3 {
+    color: #0156a3;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+/* Styling for text within events or news items */
+.event p, .news-item p {
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Testimonial Section */
+/* Container styling for testimonials */
+.testimonial {
+    border: 1px solid #ccc;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Text styling within testimonials */
+.testimonial p {
+    margin: 0.5rem 0;
+}
+
+/* Highlighted text styling */
+strong {
+    color: #7b2e0f;
+}
+
+/* General Title Styling */
+/* Style for h2 elements used across the website */
+h2 {
+    color: #0156a3;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Values Section */
+/* Container for value cards */
+.values {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    justify-content: center;
+}
+
+/* Individual value card styling */
+.value {
+    border: 1px solid #ccc;
+    padding: 1.5rem;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+
+/* Titles within value cards */
+.value h3 {
+    color: #0156a3;
+}
+
+/* Text within value cards */
+.value p {
+    color: #7b2e0f;
+}
+
+
+
+
+/* Center-aligns all paragraphs inside sections */
+section p {
+    text-align: center;
+}
+
+/* Form label styling */
+/* Adds margin above labels and sets the text color */
+label {
+    margin-top: 1rem;
+    color: #0156a3;
+}
+
+/* Input and textarea styling */
+/* Sets width, padding, and border for text inputs, email inputs, telephone inputs, and textareas */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* FAQ Section Styling */
+/* General container styling for the FAQ section */
+.faq-section {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual FAQ item styling */
+.faq-item {
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+/* Summary styling inside FAQ items */
+/* Makes the summary text larger, adds pointer cursor, and removes default list styling */
+.faq-item summary {
+    font-size: 1.2rem;
+    color: #0156a3;
+    cursor: pointer;
+    list-style: none;
+}
+
+/* Hover effect for FAQ summaries */
+.faq-item summary:hover {
+    text-decoration: underline;
+}
+
+/* Paragraph text inside FAQ items */
+/* Adds margin and indentation to FAQ item paragraphs */
+.faq-item p {
+    margin: 0.5rem 0;
+    padding-left: 1rem;
+    color: #333;
+    font-size: 1rem;
+}
+
+/* General Form Styling */
+/* Applies a flexible column layout for forms, with centered alignment and padding */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px; 
+    margin: 0 auto; 
+    padding: 1rem; 
+}
+
+/* Input and textarea styling */
+/* Applies consistent width, padding, and border styling */
+input, textarea {
+    width: 100%; 
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box; 
+}
+
+/* Button Styling */
+/* General button styling with padding, color, and hover effects */
+button {
+    margin-top: 1rem;
+    padding: 0.7rem;
+    background-color: #0156a3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%; 
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: #013d7a;
+}
+
+/* Additional Padding for Specific Forms */
+/* Adds padding and box shadow to contact, register, and login forms */
+.contact-form, .register-form, .login-form {
+    padding: 1.5rem;
+    background-color: #f9f9f9; 
+    border-radius: 8px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+/* Link styles */
+/* General paragraph alignment and link styling */
+p {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* Link hover effect */
+p a {
+    color: #0156a3;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Skip Link Styling */
+/* Positions the skip link off-screen and makes it visible on focus */
+.skip-link {
+    position: absolute;
+    top: -1000px; 
+    left: 10px;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    z-index: 9999;
+    text-align: center;
+    transition: top 0.3s; 
+}
+
+/* Skip link focus state for accessibility */
+.skip-link:focus {
+    top: 10px; 
+}
+
+/* Header Container */
+/* Sets up the header layout with spaced elements and background color */
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Align logo and clock on opposite sides */
+    align-items: center; /* Vertically center content */
+    padding: 0 20px; /* Add some padding to the left and right */
+    height: 112px; /* Maintain consistent height for the header */
+    background-color: #0156a3; /* Ensure the header color matches the design */
+}
+
+/* Header title styling */
+/* Centers and positions the header title */
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    position: absolute; 
+    left: 50%;
+    transform: translateX(-50%); 
+}
+
+/* Logo styling */
+/* Adjusts the logo size and adds spacing */
+.logo {
+    width: 80px; /* Adjust the size of the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 10px; /* Add some spacing on the left */
+}
+
+/* Clock Styling */
+/* Styles the clock element in the header */
+#clock {
+    position: relative;
+    background-color: #f4f4f4;
+    color: #0156a3;
+    font-weight: bold;
+    font-size: 1.2rem;
+    width: 112px;
+    height: 112px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-right: 10px; /* Add spacing on the right */
+}
+
+
+/* Footer Styling */
+/* Styles the footer area with a dark background color, white text, and centered content */
+footer {
+    background-color: #7b2e0f; /* Sets a dark brown background color */
+    color: white; /* White text for readability */
+    text-align: center; /* Centers all content inside the footer */
+    padding: 2rem; /* Adds spacing inside the footer */
+    margin-top: 3rem; /* Adds space above the footer */
+    position: relative; /* Allows for layout adjustments relative to other elements */
+}
+
+/* Footer Links */
+/* Styles the links inside the footer */
+footer a {
+    color: #ffa200; /* Bright orange color for links */
+    text-decoration: none; /* Removes underline from links */
+}
+
+/* Footer Link Hover Effect */
+/* Adds an underline to footer links when hovered */
+footer a:hover {
+    text-decoration: underline; /* Underlines the link text on hover */
+}
+
+/* Social Media Icons */
+/* Styles the social media icons in the footer */
+.social-icons {
+    margin-top: 1rem; /* Adds space above the icons */
+    display: flex; /* Aligns icons in a row */
+    justify-content: center; /* Centers the icons */
+    gap: 1rem; /* Adds space between each icon */
+}
+
+/* Individual Social Media Icon Styling */
+/* Sets size, color, and hover effects for icons */
+.social-icons i {
+    font-size: 24px; /* Sets the size of the icons */
+    color: white; /* White color for contrast */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Social Media Icon Hover Effect */
+/* Enlarges the icon and changes its color when hovered */
+.social-icons i:hover {
+    transform: scale(1.1); /* Slightly increases the size of the icon */
+    color: #ffa200; /* Changes the icon color to orange */
+}
+
+/* Locations List */
+/* Styles a list of locations with a card-like appearance */
+.locations-list {
+    list-style: none; /* Removes default list bullets */
+    padding: 0; /* Removes default padding */
+    margin: 0 auto; /* Centers the list */
+    max-width: 600px; /* Limits the width of the list */
+}
+
+/* Individual Location List Items */
+/* Styles each list item to look like a card */
+.locations-list li {
+    background-color: white; /* Sets a white background */
+    border: 1px solid #ddd; /* Light gray border for a clean look */
+    border-radius: 8px; /* Rounds the corners of the card */
+    padding: 1rem; /* Adds space inside the card */
+    margin-bottom: 1rem; /* Adds space between cards */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds a shadow for depth */
+    font-size: 1.1rem; /* Sets a slightly larger font size for readability */
+    text-align: left; /* Aligns text to the left */
+}
+
+/* Highlighting Important Text in Locations */
+/* Styles text inside the <strong> tag within the location list */
+.locations-list li strong {
+    color: #7b2e0f; /* Highlights important text in dark brown */
+}
+
+/* Visually Hidden Content */
+/* Hides content visually but keeps it accessible for screen readers */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Hamburger Icon Styling */
+/* Styles the hamburger menu icon for mobile navigation */
+.hamburger {
+    display: flex; /* Aligns hamburger bars vertically */
+    flex-direction: column; /* Stacks bars vertically */
+    justify-content: space-between; /* Evenly spaces bars */
+    width: 30px; /* Width of the hamburger icon */
+    height: 20px; /* Height of the hamburger icon */
+    cursor: pointer; /* Changes cursor to pointer for interactivity */
+    margin: 0 auto; /* Centers the hamburger icon */
+    align-self: center;
+    position: relative; /* Positions relative to other elements */
+    z-index: 1010; /* Ensures it appears above other elements */
+}
+
+/* Individual Hamburger Bar Styling */
+/* Styles each bar in the hamburger menu */
+.hamburger div {
+    width: 100%; /* Full width of the container */
+    height: 4px; /* Thickness of each bar */
+    background-color: white; /* White color for visibility */
+    border-radius: 2px; /* Rounds the edges of the bars */
+}
+
+/* Mobile Navigation Menu */
+/* Styles the hidden mobile navigation menu */
+.mobile-nav {
+    display: none; /* Hides the menu by default */
+    flex-direction: column; /* Aligns menu items vertically */
+    position: absolute; /* Positions menu relative to the viewport */
+    top: 160px; /* Positions the menu below the header */
+    left: 0; /* Aligns the menu to the left edge */
+    width: 100%; /* Full width of the viewport */
+    background-color: #0156a3; /* Matches the primary color */
+    z-index: 1000; /* Ensures it appears above other content */
+    padding: 1rem 0; /* Adds padding inside the menu */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds depth with a shadow */
+    border-radius: 0; /* No rounded corners */
+}
+
+/* Active Mobile Navigation */
+/* Displays the menu when the 'active' class is applied */
+.mobile-nav.active {
+    display: flex; /* Makes the menu visible */
+}
+
+/* Mobile Navigation Links */
+/* Styles individual links in the mobile navigation menu */
+.mobile-nav a {
+    padding: 1rem; /* Adds space around the text */
+    text-align: center; /* Centers the text */
+    color: white; /* White text for contrast */
+    text-decoration: none; /* Removes underline */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Adds a light border */
+}
+
+/* Mobile Navigation Link Hover Effect */
+/* Changes background color when links are hovered */
+.mobile-nav a:hover {
+    background-color: #013d7a; /* Darker blue for hover effect */
+}
+
+/* Responsive Adjustments */
+/* Adjusts navigation styling for screens narrower than 768px */
+@media (max-width: 768px) {
+    nav .nav-links {
+        display: none; /* Hides normal navigation */
+    }
+
+    .hamburger {
+        display: flex; /* Displays the hamburger menu */
+    }
+}
+
+/* Adjustments for Wider Screens */
+/* Ensures proper display for screens wider than 768px */
+@media (min-width: 768px) {
+    .hamburger {
+        display: none; /* Hides the hamburger menu */
+    }
+
+    .mobile-nav {
+        display: none; /* Hides the mobile navigation */
+    }
+}
+
+/* Further Refinement for Tablet Screens */
+/* Adjusts link spacing and font sizes for tablet devices */
+@media (max-width: 1024px) {
+    .nav-links {
+        gap: 0.3rem; /* Reduces gap between links */
+    }
+
+    .nav-links a {
+        font-size: 0.7rem; /* Reduces font size for compact layout */
+        padding: 0 0.2rem; /* Adjusts padding for smaller devices */
+    }
+
+    .nav-links {
+        justify-content: space-evenly; /* Distributes links evenly */
+    }
+
+    /* Custom Scrollbar for Navigation Links */
+    .nav-links::-webkit-scrollbar {
+        height: 4px; /* Thin scrollbar */
+    }
+
+    .nav-links::-webkit-scrollbar-thumb {
+        background-color: rgba(255, 255, 255, 0.5); /* Light thumb color */
+        border-radius: 10px; /* Rounded scrollbar thumb */
+    }
+}
