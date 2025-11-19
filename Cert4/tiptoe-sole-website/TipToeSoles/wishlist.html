@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist - TipToe Soles</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="img/TipToeSoles_Logo_colour.png" alt="TipToe Soles logo"></a>
+        </div>
+        <nav class="navbar">
+            <div class="hamburger" id="hamburger" aria-label="Menu Toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="menu" id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li id="products-link">
+                    <a href="products.html">Products</a>
+                    <ul class="submenu">
+                        <li><a href="men.html">Men</a></li>
+                        <li><a href="women.html">Women</a></li>
+                    </ul>
+                </li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="wishlist.html">Wishlist</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="search-item">
+                    <form action="search.html" method="GET" class="search-form">
+                        <label for="search-query" class="visually-hidden">Search</label>
+                        <input type="text" id="search-query" name="query" placeholder="Search...">
+                        <button type="submit">Search</button>
+                    </form>
+                </li>
+            </ul>
+            <div class="close" id="close" aria-label="Close Menu">&times;</div>
+        </nav>
+    </header>
+    <div class="menu-overlay" id="menu-overlay"></div>
+
+    <div class="wishlist-container">
+        <h1>My Wishlist</h1>
+        <div class="wishlist-items">
+            <div class="wishlist-item">
+                <img src="img/blackshoes.png" alt="Black shoes">
+                <h2>Men's Casual Shoe</h2>
+                <p>$99.99</p>
+                <button class="remove-btn" aria-label="Remove Men's Casual Shoe">Remove</button>
+            </div>
+            <div class="wishlist-item">
+                <img src="img/womens-running-shoes.png" alt="Running shoes">
+                <h2>Women's Running Shoe</h2>
+                <p>$79.99</p>
+                <button class="remove-btn" aria-label="Remove Women's Running Shoe">Remove</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>TipToe Soles</h3>
+                        <p>Your one-stop shop for all your footwear needs.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h4>Contact Us</h4>
+                        <ul>
+                            <li>Email: support@tiptoesoles.com</li>
+                            <li>Phone: (123) 456-7890</li>
+                            <li>Address: 123 Shoe St, Fashion City</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
