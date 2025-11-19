@@ -1,0 +1,130 @@
+@charset "utf-8";
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, Calibri, sans-serif;
+}
+
+
+#wrapper{
+	margin: auto;
+	width: 960px;
+	height: 1600px;
+	
+}
+
+:root{
+	--burntred:#E94D40;
+	--navyblue:#0C243C;
+	--majheading:#87423c;
+	--subheading:#4d1d18;
+	--linkhover:#c4bcbc71;
+}
+
+h1 {
+	font-size: 36px;
+	color: #87423c;
+}
+
+
+
+h2{
+	padding-bottom: 15px;
+	font-size: 36px;
+	color: #87423c;
+}
+
+h3{
+	padding-bottom: 15px;
+	font-size: 24px;
+	color: #4d1d18;
+	
+}
+
+.restaurants{
+	margin-left: 155px;
+}
+
+
+section{
+	margin-left: 140px;
+}
+
+.attract{
+	width: 300px;
+	height: 200px;
+	margin: 15px;
+	display: inline-block;
+	vertical-align: top;
+	text-align: justify;
+	line-height: 145%;
+}
+.attractions{
+	width: 700px;
+	height: 1050px;
+	margin-left: 150px;
+}
+
+nav{
+	width: 1200px;
+	height: 50px;
+	padding-top: 20px;
+	text-align: right;	
+	float: right;
+	
+}
+
+nav>a{
+	margin-left: 35px;
+	text-decoration: none;
+	color: #4d1d18;
+	font-weight: bolder;
+}
+
+nav>a:hover{
+	background-color:#c4bcbc71;
+	
+	
+}
+
+
+header{
+	width:950px;
+	height:450px;
+	margin-bottom: 25px;
+}
+
+
+p{
+	text-align: justify;
+	margin-bottom: 15px;;
+	line-height: 150%;
+}
+
+
+footer{
+	width: 960px;
+	height: 50px;
+	/* background-color: var(--navyblue); */
+	/* color: #fff; */
+	color: #87423c;
+	text-align: center;
+	padding-top: 15px;
+	margin-top: 25px;
+	
+}
+
+/* a:active {
+	color:rgb(24, 185, 24);
+	} */
+
+a:visited {
+	color: #4d1d18;
+	}
+
+.fa{
+	margin-left: 20px;
+	
+}
+
