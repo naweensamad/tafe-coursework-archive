@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.Insets?>
+<?import java.net.URL?>
+
+
+
+<VBox alignment="CENTER" spacing="0" styleClass="background" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ErrorController">
+
+<ImageView fx:id="errorImg" fitWidth="540" preserveRatio="true"/>
+
+<VBox alignment="CENTER" spacing="6" styleClass="background" maxWidth="Infinity">
+<Separator/>
+
+<Label fx:id="errorTitleLbl" styleClass="error"/>
+
+<Separator/>
+<Label fx:id="errorMsgLbl" styleClass="heading"/>
+
+<padding><Insets top="0" right="0" bottom="8" left="0"/></padding>
+</VBox>
+
+<HBox alignment="CENTER" maxWidth="Infinity">
+    <Button styleClass="button" fx:id="closeBtn" text="Close" maxWidth="Infinity" HBox.hgrow="ALWAYS" onAction="#close"/>
+</HBox>
+
+
+
+<stylesheets>
+        <URL value="@style.css"/>
+    </stylesheets>
+</VBox>
+
+
